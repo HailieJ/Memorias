@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memórias de Hailie Jade">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hailie Jade - Diários Visuais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-overlay">
+        <h1>Hailie Jade</h1>
+        <p>Memórias em cada imagem, histórias em cada detalhe</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="changeSection('memories')">Memórias</a></li>
+                <li><a href="#" onclick="changeSection('stories')">Histórias Secretas</a></li>
+                <li><a href="#" onclick="changeSection('collection')">Coleção Privada</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="content" id="content">
+
+    <!-- Seção de Memórias -->
+    <section class="memories-section" id="memories">
+        <h2>Relíquias Visuais</h2>
+        <div class="memory-grid">
+            <div class="memory-item" onclick="revealStory(1)">
+                <img src="CabeloP.jpg" alt="Pincel">
+                <div class="caption">A gente tava sem um pincel para usar na atividade, então cortamos o meu cabelo e fizemos um pincel</div>
+            </div>
+            <div class="memory-item" onclick="revealStory(2)">
+                <img src="PipocaN.jpg" alt="Pipoca NhamNham">
+                <div class="caption">Do nada entrou a tia com umonte de pipoca</div>
+            </div>
+            <div class="memory-item" onclick="revealStory(3)">
+                <img src="AghataT.jpg" alt="Posando Descalça">
+                <div class="caption">A Aghata simplesmente perdeu o tênis</div>
+            </div>
+        </div>
+    </section>
+    <section class="stories-section" id="stories" style="display: none;">
+        <h2>Histórias Ocultas</h2>
+        <div class="story-list">
+            <div class="story-box">
+                <h3>Cabelo Pincel</h3>
+                <p>Nesse dia, esquecemos do pincel e da aula da Cieli</p>
+            </div>
+            <div class="story-box">
+                <h3>Pipoca Do Nada</h3>
+                <p>Descobri não muito tempo depois que era por conta do dia das crianças</p>
+            </div>
+            <div class="story-box">
+                <h3>Aghata Tênis</h3>
+                <p>Não faço ideia de como aquele tênis saiu do pé dela</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coleção Privada -->
+    <section class="private-section" id="collection" style="display: none;">
+        <h2>Coleção Privada de Hailie Jade</h2>
+        <p>Entre nesta galeria exclusiva e veja imagens que nunca foram reveladas antes.</p>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="Brigada.jpg" alt="Imagem exclusiva 1">
+                <div class="private-caption">Dia da brigada de incêncio</div>
+            </div>
+            <div class="collection-item">
+                <img src="MeiaD.jpg" alt="Imagem exclusiva 2">
+                <div class="private-caption">Maria com a meia divertida</div>
+            </div>
+            <div class="collection-item">
+                <img src="Volei.jpg" alt="Imagem exclusiva 3">
+                <div class="private-caption">Aghata cometendo crime</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; Morelli 2024, Hailie Jade 3°E - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
